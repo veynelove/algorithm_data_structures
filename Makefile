@@ -1,6 +1,7 @@
-objects = main.o 
-	algorithm_analysis.o 
-	table_stack_queue.o
+objects = main.o \
+	algorithm_analysis.o \
+	list.o \
+	polynomial_adt.o
 
 %.o: %.c
 	gcc -o $@ -c $<

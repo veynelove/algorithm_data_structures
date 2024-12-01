@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "./chapter_2/algorithm_analysis.h"
 
 void chapter_2()
