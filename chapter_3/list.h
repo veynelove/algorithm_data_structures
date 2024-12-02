@@ -21,6 +21,7 @@ Position Header(List L);
 Position First(List L);
 Position Advance(Position P);
 ElementType Retrieve(Position P);
+void PrintList(List L);
 
 struct Node
 {

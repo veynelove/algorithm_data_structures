@@ -95,3 +95,13 @@ ElementType Retrieve(Position P)
 {
     return P->Element;
 }
+
+void PrintList(List L)
+{
+    top:
+        if(L!= NULL) {
+            printf("%d", L->Element);
+            L = L->Next;
+            goto top;
+        }
+}

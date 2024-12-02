@@ -1,7 +1,10 @@
 objects = main.o \
 	algorithm_analysis.o \
-	list.o \
-	polynomial_adt.o
+	polynomial_adt.o \
+	list.o 
+#queue_by_array.o
+#stack_by_array.o 
+#stack_by_list.o 不支持函数重载,链接函数名会与list.h中冲突.因学习需要,不加入编译
 
 %.o: %.c
 	gcc -o $@ -c $<
