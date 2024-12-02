@@ -5,6 +5,8 @@
 #include "stdlib.h"
 
 typedef int ElementType;
+typedef char *DirectoryOrFile;
+
 #define NotFound -1
 
 #define Max(a, b) \
