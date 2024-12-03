@@ -10,6 +10,8 @@ typedef int ElementType;
 typedef char *DirectoryOrFile;
 
 #define NotFound -1
+#define NotAVertex -1
+#define NumVertex 10
 
 #define Max(a, b) \
     ((a) > (b) ? (a) : (b))

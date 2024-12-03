@@ -7,7 +7,8 @@ objects = main.o \
 	leftist_heap.o \
 	binomial_queue.o \
 	comparison_based_sorting.o \
-	disjoint_set.o
+	disjoint_set.o \
+	algorithm_design_skills.o
 #priority_queue.o
 #separate_chaining.o
 #search_tree.o
@@ -15,6 +16,8 @@ objects = main.o \
 #queue_by_array.o
 #stack_by_array.o 
 #stack_by_list.o 不支持函数重载,链接函数名会与list.h中冲突.因学习需要,不加入编译
+
+#graph.o 第九章的算法书上都是伪代码,这里只列出.不要加入编译
 
 %.o: %.c
 	gcc -o $@ -c $< 
@@ -31,6 +34,8 @@ objects = main.o \
 %.o: ./chapter_7/%.c
 	gcc -o $@ -c $<	
 %.o: ./chapter_8/%.c
+	gcc -o $@ -c $<	
+%.o: ./chapter_10/%.c
 	gcc -o $@ -c $<	
 
 al_ds: ${objects}
