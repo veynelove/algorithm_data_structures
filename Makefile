@@ -5,7 +5,8 @@ objects = main.o \
 	hashing.o \
 	open_addressing_hashing.o \
 	leftist_heap.o \
-	binomial_queue.o
+	binomial_queue.o \
+	comparison_based_sorting.o
 #priority_queue.o
 #separate_chaining.o
 #search_tree.o
@@ -25,6 +26,8 @@ objects = main.o \
 %.o: ./chapter_5/%.c
 	gcc -o $@ -c $<	
 %.o: ./chapter_6/%.c
+	gcc -o $@ -c $<	
+%.o: ./chapter_7/%.c
 	gcc -o $@ -c $<	
 
 al_ds: ${objects}
