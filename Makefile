@@ -3,7 +3,10 @@ objects = main.o \
 	polynomial_adt.o \
 	avl_tree.o \
 	hashing.o \
-	open_addressing_hashing.o
+	open_addressing_hashing.o \
+	leftist_heap.o \
+	binomial_queue.o
+#priority_queue.o
 #separate_chaining.o
 #search_tree.o
 #list.o
@@ -20,6 +23,8 @@ objects = main.o \
 %.o: ./chapter_4/%.c
 	gcc -o $@ -c $<	
 %.o: ./chapter_5/%.c
+	gcc -o $@ -c $<	
+%.o: ./chapter_6/%.c
 	gcc -o $@ -c $<	
 
 al_ds: ${objects}
