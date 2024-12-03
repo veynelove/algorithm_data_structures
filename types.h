@@ -3,6 +3,7 @@
 
 #include "stdio.h"
 #include "stdlib.h"
+#include "math.h"
 
 typedef int ElementType;
 typedef char *DirectoryOrFile;
@@ -16,7 +17,6 @@ typedef char *DirectoryOrFile;
 
 #define FatalError(s) ({ \
     printf(s); \
-    return NULL; \
 })
 
 #endif
